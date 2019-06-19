@@ -6,6 +6,12 @@ package com.example;
 public class Greeter {
 
   /**
+   *
+   */
+
+  private static final String MY_NAME_IS_NICO_H_HELLO_S = "My Name is NicoH. Hello, %s!";
+
+  /**
    * This is a constructor.
    */
   public Greeter() {
@@ -17,6 +23,6 @@ public class Greeter {
    * @return greeting string nicoh
    */
   public final String greet(final String someone) {
-    return String.format("Hello, %s!", someone);
+    return String.format(MY_NAME_IS_NICO_H_HELLO_S, someone);
   }
 }
